@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contacto - Palabras con Propósito</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="imagen/logo.ico.jpeg">
+    <link rel="stylesheet" type="text/css" href="css/contacto.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">EL BÚHO</div>
+        <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        </div>
+         <nav class="nav-bar">
+            <ul>
+                <li><a href="bienvenido.html" class="active"> inicio</a></li>
+                <li><a href="Catalogo.html">libros</a></li>
+                <li><a href="nosotros.html">nosotros</a></li>
+                <li><a href="Contacto.html">servicio</a></li>
+                <li><a href="reseñas.html">reseñas</a></li>
+                <li><a href="inicio.html">iniciar sesion</a></li>
+            </ul>
+        </nav>    
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function () {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }</script>
+    </header>
+
+    <section class="contact-options">
+        <h1>Contáctanos</h1>
+        <div class="contact-method">
+            <h2>Redes Sociales</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/tupagina" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/tupagina" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/tupagina" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+
+        <div class="contact-method">
+            <h2>Contacto Directo</h2>
+            <p>Puedes ponerte en contacto con nosotros a través de:</p>
+            <ul>
+                <li>Correo Electrónico: <a href="mailto:marcosbohorquez@gmail.com">mandanos un imail</a></li>
+                <li>WhatsApp: <a href="https://wa.me/3135123064" target="_blank">3135123064</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

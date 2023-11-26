@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+  background: antiquewhite;
+  
+  }
+  
+  header {
+  width: 100%;
+  height: 80px;
+  background: #11101b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  }
+  .logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+  }
+  .hamburger{
+    display: none;
+  }
+  .nav-bar ul {
+    display: flex;
+  }
+  .nav-bar ul li a {
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px; 
+  }
+  
+  .nav-bar ul li a:hover {
+    color: #11101b; /* Cambio de color al pasar el mouse a otro color */
+    background: #fefefe;
+  }
+  .nav-bar ul li a.active {
+    color: #11101b;
+    background: #fefefe;
+  }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a2c50;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.section__container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header{
+    margin-bottom: 2rem;
+}
+
+.header p{
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.testimonial__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card{
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    background-color: #d8a399;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px black;
+    cursor: pointer;
+}
+
+.card i{
+    font-size: 2.5rem;
+}
+
+.card p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.card hr{
+    width: 40px;
+    margin: auto;
+    color: #767268;
+}
+
+.card img{
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 100%;
+    border: 1px solid #1a2c50;
+}
+
+.card .name{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #767268;
+    transition: 0.3s;
+}
+
+.card .name:hover{
+    color: #1a2c50;
+}
+
+.footer h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.footer p{
+    max-width: 450px;
+    margin: auto;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer button{
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1a2c50;
+    background-color: #d8a399;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (width < 900px){
+    .testimonial__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width < 600px) {
+    .testimonial__grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
